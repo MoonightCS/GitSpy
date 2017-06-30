@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4caf50</color>
+    <color name="colorPrimaryDark">#388e3c</color>
+    <color name="colorAccent">#2196f3</color>
+
+    <color name="textColorPrimary">#F0000000</color>
+    <color name="textColorSecondary">#CC000000</color>
+    <color name="textColorTertiary">#88000000</color>
+
+    <color name="textColorPrimaryInverse">#FFFFFFFF</color>
+    <color name="textColorSecondaryInverse">#CCFFFFFF</color>
+    <color name="textColorTertiaryInverse">#88FFFFFF</color>
+
+    <color name="color_control_normal">#1A000000</color>
+</resources>

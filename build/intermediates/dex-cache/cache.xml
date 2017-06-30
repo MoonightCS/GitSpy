@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/bogdanpopov/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife-annotations/8.6.0/48efa6f14074e1a6b16e02ac05eba3fc5c7c7ec8/butterknife-annotations-8.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="48efa6f14074e1a6b16e02ac05eba3fc5c7c7ec8">
+        <dex dex="/Users/bogdanpopov/Desktop/rx-java/GitSpy/app/build/intermediates/pre-dexed/debug/butterknife-annotations-8.6.0_73212e36063a437bc30a20ec6c87d37d48933e13.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/bogdanpopov/.android/build-cache/dd62edd8f48becca372c6b110a4553aae59e3782/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="be587097e648eabfb7f9eca23ab03369894e2d5d">
+        <dex dex="/Users/bogdanpopov/Desktop/rx-java/GitSpy/app/build/intermediates/pre-dexed/debug/classes_b655d850e63c9fa3e1b824658e4b75c1ce6f6f5b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/bogdanpopov/.gradle/caches/modules-2/files-2.1/io.reactivex/rxjava/1.3.0/af000bec2036a2a9d07197c4b03b8966bfc60b03/rxjava-1.3.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="af000bec2036a2a9d07197c4b03b8966bfc60b03">
+        <dex dex="/Users/bogdanpopov/Desktop/rx-java/GitSpy/app/build/intermediates/pre-dexed/debug/rxjava-1.3.0_5457cd011c4332f11f4efeda217da71b9f7df037.jar" />
+    </item>
+
+</items>
