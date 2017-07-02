@@ -12,5 +12,6 @@
     <color name="textColorSecondaryInverse">#CCFFFFFF</color>
     <color name="textColorTertiaryInverse">#88FFFFFF</color>
 
-    <color name="color_control_normal">#1A000000</color>
+    <color name="color_control_normal">#FFFFFFFF</color>
+    <color name="appbar_color_control_normal">#FFFFFFFF</color>
 </resources>

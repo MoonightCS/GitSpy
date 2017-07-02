@@ -1,16 +1,27 @@
 <resources>
 
-    <style name="ThemeOverlay.AppTheme" parent="@style/ThemeOverlay.AppCompat.Light">
+    <style name="ThemeOverlay.GitSpy" parent="@style/ThemeOverlay.AppCompat.Light">
         <item name="colorControlNormal">@color/color_control_normal</item>
     </style>
 
-    <style name="ThemeOverlay.AppTheme.ActionBar">
+    <style name="ThemeOverlay.GitSpy.ActionBar">
         <item name="searchViewStyle">@style/Widget.AppCompat.SearchView.ActionBar</item>
     </style>
 
-    <style name="ThemeOverlay.AppTheme.ActionBar.Colored">
+    <style name="ThemeOverlay.GitSpy.ActionBar.Colored">
         <item name="colorControlNormal">?android:attr/textColorPrimaryInverse</item>
         <item name="android:textColorPrimary">?android:attr/textColorPrimaryInverse</item>
     </style>
+
+
+    <style name="TextAppearance.GitSpy.AppBarHintTextAppearance" parent="TextAppearance.Design.Hint">
+        <item name="android:textColor">@color/textColorPrimaryInverse</item>
+    </style>
+
+    <style name="Widget.GitSpy.AppBarTextInputLayout" parent="Widget.Design.TextInputLayout">
+        <item name="hintTextAppearance">@style/TextAppearance.GitSpy.AppBarHintTextAppearance</item>
+    </style>
+
+
 
 </resources>
