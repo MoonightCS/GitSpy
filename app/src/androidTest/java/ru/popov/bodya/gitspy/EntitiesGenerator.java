@@ -3,7 +3,7 @@ package ru.popov.bodya.gitspy;
 
 import java.util.Random;
 
-import ru.popov.bodya.gitspy.activity.entity.User;
+import ru.popov.bodya.gitspy.entity.User;
 
 public class EntitiesGenerator {
 

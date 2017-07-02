@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/popovbodya/Documents/projects/GitSpy/app/build/intermediates/res/merged/debug/mipmap-mdpi/ic_launcher_round.png",
+        "source": "/Users/popovbodya/Documents/projects/GitSpy/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/popovbodya/Desktop/GitSpy/app/build/intermediates/res/merged/debug/mipmap-mdpi/ic_launcher.png",
+        "source": "/Users/popovbodya/Desktop/GitSpy/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/popovbodya/Documents/projects/GitSpy/app/build/intermediates/res/merged/debug/mipmap-mdpi/ic_launcher.png",
+        "source": "/Users/popovbodya/Documents/projects/GitSpy/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/popovbodya/Desktop/GitSpy/app/build/intermediates/res/merged/debug/mipmap-mdpi/ic_launcher_round.png",
+        "source": "/Users/popovbodya/Desktop/GitSpy/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
+    }
+]
