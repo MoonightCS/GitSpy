@@ -13,21 +13,24 @@ public class User implements Parcelable {
     @JsonProperty("login")
     private String username;
 
-    @JsonProperty("url")
-    private String url;
-
     @JsonProperty("score")
     private double score;
 
     @JsonProperty("avatar_url")
     private String avatarUrl;
 
+
     public User() {
+    }
+
+    public User(String username, double score, String avatarUrl) {
+        this.username = username;
+        this.score = score;
+        this.avatarUrl = avatarUrl;
     }
 
     protected User(Parcel in) {
         username = in.readString();
-        url = in.readString();
         score = in.readDouble();
         avatarUrl = in.readString();
     }
@@ -35,7 +38,6 @@ public class User implements Parcelable {
     @Override
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeString(username);
-        dest.writeString(url);
         dest.writeDouble(score);
         dest.writeString(avatarUrl);
     }
@@ -61,24 +63,20 @@ public class User implements Parcelable {
         return username;
     }
 
-    public String getUrl() {
-        return url;
-    }
-
-    public String getAvatarUrl() {
-        return avatarUrl;
-    }
-
     public void setUsername(String username) {
         this.username = username;
     }
 
-    public void setUrl(String url) {
-        this.url = url;
+    public double getScore() {
+        return score;
     }
 
     public void setScore(double score) {
         this.score = score;
+    }
+
+    public String getAvatarUrl() {
+        return avatarUrl;
     }
 
     public void setAvatarUrl(String avatarUrl) {
@@ -95,7 +93,6 @@ public class User implements Parcelable {
         if (Double.compare(user.score, score) != 0) return false;
         if (username != null ? !username.equals(user.username) : user.username != null)
             return false;
-        if (url != null ? !url.equals(user.url) : user.url != null) return false;
         return avatarUrl != null ? avatarUrl.equals(user.avatarUrl) : user.avatarUrl == null;
 
     }
@@ -105,7 +102,6 @@ public class User implements Parcelable {
         int result;
         long temp;
         result = username != null ? username.hashCode() : 0;
-        result = 31 * result + (url != null ? url.hashCode() : 0);
         temp = Double.doubleToLongBits(score);
         result = 31 * result + (int) (temp ^ (temp >>> 32));
         result = 31 * result + (avatarUrl != null ? avatarUrl.hashCode() : 0);
@@ -116,7 +112,6 @@ public class User implements Parcelable {
     public String toString() {
         return "User{" +
                 "username='" + username + '\'' +
-                ", url='" + url + '\'' +
                 ", score=" + score +
                 ", avatarUrl='" + avatarUrl + '\'' +
                 '}';

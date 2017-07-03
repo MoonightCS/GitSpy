@@ -1,11 +1,9 @@
-package ru.popov.bodya.gitspy;
+package ru.popov.bodya.gitspy.entity;
 
 
 import java.util.Random;
 
-import ru.popov.bodya.gitspy.entity.User;
-
-public class EntitiesGenerator {
+public final class EntitiesGenerator {
 
     private static final Random RANDOM = new Random();
     private static final int SIZE = 30;
@@ -17,10 +15,13 @@ public class EntitiesGenerator {
         String name = createRandomString();
         User user = new User();
         user.setUsername(name);
-        user.setUrl("https://api.github.com/users/" + name);
         user.setAvatarUrl("https://avatars3.githubusercontent.com/u/" + createRandomInt(15000000) + "?v=3");
         user.setScore(createRandomDouble());
         return user;
+    }
+
+    public static User createSpecifiedUser(String username, String avatarUrl, double score) {
+        return new User(username, score, avatarUrl);
     }
 
     private static int createRandomInt(int max) {
