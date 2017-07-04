@@ -55,7 +55,7 @@ public class CheeseAdapter extends RecyclerView.Adapter<CheeseAdapter.Holder> {
 
         Holder(View itemView) {
             super(itemView);
-            cheeseNameTextView = (TextView) itemView.findViewById(R.id.cheese_name);
+            cheeseNameTextView = itemView.findViewById(R.id.cheese_name);
         }
     }
 }

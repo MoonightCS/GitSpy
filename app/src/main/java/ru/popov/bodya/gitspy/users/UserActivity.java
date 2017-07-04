@@ -1,6 +1,7 @@
-package ru.popov.bodya.gitspy.activity;
+package ru.popov.bodya.gitspy.users;
 
 import android.os.Handler;
+import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -9,10 +10,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 
 import ru.popov.bodya.gitspy.R;
-import ru.popov.bodya.gitspy.users.UsersViewDispatcher;
-import ru.popov.bodya.gitspy.users.UsersViewDispatcherImpl;
 
 public class UserActivity extends AppCompatActivity implements UsersViewDispatcher.DispatcherEventListener {
 
@@ -32,13 +32,13 @@ public class UserActivity extends AppCompatActivity implements UsersViewDispatch
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        usersViewDispatcher.destroy();
+        usersViewDispatcher.destroyView();
     }
 
     @Override
     public void onRefresh(UsersViewDispatcher sender) {
         Log.e(TAG, "onRefresh");
-        new Handler().postDelayed(() -> sender.getSwipeRefreshLayout().setRefreshing(false), 3000);
+        new Handler().postDelayed(() -> sender.showRefresh(false), 3000);
     }
 
     @Override
