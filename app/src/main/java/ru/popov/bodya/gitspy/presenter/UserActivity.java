@@ -1,7 +1,6 @@
-package ru.popov.bodya.gitspy.users;
+package ru.popov.bodya.gitspy.presenter;
 
 import android.os.Handler;
-import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -10,9 +9,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.MenuItem;
 
 import ru.popov.bodya.gitspy.R;
+import ru.popov.bodya.gitspy.view.users.UsersViewDispatcher;
+import ru.popov.bodya.gitspy.view.users.UsersViewDispatcherImpl;
 
 public class UserActivity extends AppCompatActivity implements UsersViewDispatcher.DispatcherEventListener {
 

@@ -1,8 +1,8 @@
-package ru.popov.bodya.gitspy.model.stub;
+package ru.popov.bodya.gitspy.model.cheeses.entity;
 
 
 public class Cheeses {
-    static final String[] cheeseStrings = {
+    public static final String[] cheeseStrings = {
             "Abbaye de Belloc", "Abbaye du Mont des Cats", "Abertam", "Abondance", "Ackawi",
             "Acorn", "Adelost", "Affidelice au Chablis", "Afuega'l Pitu", "Airag", "Airedale",
             "Aisy Cendre", "Allgauer Emmentaler", "Alverca", "Ambert", "American Cheese",

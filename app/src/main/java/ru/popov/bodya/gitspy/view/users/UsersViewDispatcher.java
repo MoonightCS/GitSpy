@@ -1,15 +1,14 @@
-package ru.popov.bodya.gitspy.users;
+package ru.popov.bodya.gitspy.view.users;
 
 
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.Toolbar;
 
 import java.util.List;
 
-import ru.popov.bodya.gitspy.core.view.BaseViewDispatcher;
-import ru.popov.bodya.gitspy.entity.User;
+import ru.popov.bodya.gitspy.view.core.BaseViewDispatcher;
+import ru.popov.bodya.gitspy.model.users.entity.User;
 
 public interface UsersViewDispatcher extends BaseViewDispatcher {
 

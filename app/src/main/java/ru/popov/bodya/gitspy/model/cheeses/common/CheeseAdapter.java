@@ -1,4 +1,4 @@
-package ru.popov.bodya.gitspy.model.stub;
+package ru.popov.bodya.gitspy.model.cheeses.common;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -11,6 +11,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import ru.popov.bodya.gitspy.R;
+import ru.popov.bodya.gitspy.model.cheeses.entity.Cheeses;
 
 public class CheeseAdapter extends RecyclerView.Adapter<CheeseAdapter.Holder> {
 

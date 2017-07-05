@@ -1,9 +1,9 @@
-package ru.popov.bodya.gitspy.entity;
+package ru.popov.bodya.gitspy.model.users.entity;
 
 
 import java.util.Random;
 
-public final class EntitiesGenerator {
+public final class UsersGenerator {
 
     private static final Random RANDOM = new Random();
     private static final int SIZE = 30;

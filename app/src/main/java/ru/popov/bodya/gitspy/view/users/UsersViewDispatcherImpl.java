@@ -1,4 +1,4 @@
-package ru.popov.bodya.gitspy.users;
+package ru.popov.bodya.gitspy.view.users;
 
 
 import android.content.Context;
@@ -22,8 +22,8 @@ import java.lang.ref.WeakReference;
 import java.util.List;
 
 import ru.popov.bodya.gitspy.R;
-import ru.popov.bodya.gitspy.entity.User;
-import ru.popov.bodya.gitspy.model.stub.CheeseAdapter;
+import ru.popov.bodya.gitspy.model.users.entity.User;
+import ru.popov.bodya.gitspy.model.cheeses.common.CheeseAdapter;
 
 public class UsersViewDispatcherImpl implements UsersViewDispatcher, SwipeRefreshLayout.OnRefreshListener {
 

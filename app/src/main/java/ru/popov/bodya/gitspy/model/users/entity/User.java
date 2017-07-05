@@ -1,4 +1,4 @@
-package ru.popov.bodya.gitspy.entity;
+package ru.popov.bodya.gitspy.model.users.entity;
 
 
 import android.os.Parcel;

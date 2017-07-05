@@ -1,4 +1,4 @@
-package ru.popov.bodya.gitspy.core.view;
+package ru.popov.bodya.gitspy.view.core;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
