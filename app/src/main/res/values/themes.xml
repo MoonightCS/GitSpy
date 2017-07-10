@@ -14,6 +14,7 @@
         <item name="colorControlNormal">@color/appbar_color_control_normal</item>
         <item name="colorControlActivated">@color/appbar_color_control_normal</item>
 
+
         <!--TextColors-->
         <item name="android:textColorPrimary">@color/textColorPrimary</item>
         <item name="android:textColorSecondary">@color/textColorSecondary</item>

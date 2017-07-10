@@ -16,6 +16,7 @@
 
     <style name="TextAppearance.GitSpy.AppBarHintTextAppearance" parent="TextAppearance.Design.Hint">
         <item name="android:textColor">@color/textColorPrimaryInverse</item>
+        <item name="android:textColorHint">@color/textColorPrimaryInverse</item>
     </style>
 
     <style name="Widget.GitSpy.AppBarTextInputLayout" parent="Widget.Design.TextInputLayout">
