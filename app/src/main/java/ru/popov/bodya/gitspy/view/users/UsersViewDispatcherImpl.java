@@ -5,6 +5,7 @@ import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.TextInputEditText;
 import android.support.v4.widget.DrawerLayout;
@@ -33,6 +34,7 @@ public class UsersViewDispatcherImpl implements UsersViewDispatcher, SwipeRefres
     private RecyclerView recyclerView;
     private SwipeRefreshLayout swipeRefreshLayout;
     private TextInputEditText textInputEditText;
+    private FloatingActionButton fab;
 
     private WeakReference<DispatcherEventListener> dispatcherEventListenerWeakRef;
     private WeakReference<Context> contextWeakRef;
@@ -83,7 +85,9 @@ public class UsersViewDispatcherImpl implements UsersViewDispatcher, SwipeRefres
         recyclerView = view.findViewById(R.id.recycler_view);
         swipeRefreshLayout = view.findViewById(R.id.swipe_refresh_layout);
         textInputEditText = view.findViewById(R.id.filter_edit_text);
+        fab = view.findViewById(R.id.fab);
 
+        addListenerToButton();
         configRecyclerView();
         addListenerToSearchEditText();
         swipeRefreshLayout.setOnRefreshListener(this);
@@ -139,6 +143,15 @@ public class UsersViewDispatcherImpl implements UsersViewDispatcher, SwipeRefres
         // fill stub data for testing
         cheeseAdapter = new CheeseAdapter();
         recyclerView.setAdapter(cheeseAdapter);
+    }
+
+    private void addListenerToButton() {
+        fab.setOnClickListener(view -> {
+            DispatcherEventListener listener = dispatcherEventListenerWeakRef.get();
+            if (listener != null) {
+                listener.addNewUserClick();
+            }
+        });
     }
 
 }

@@ -27,6 +27,7 @@ public interface UsersViewDispatcher extends BaseViewDispatcher {
     interface DispatcherEventListener {
         void onRefresh(UsersViewDispatcher sender);
         void onFilterModified(UsersViewDispatcher sender, String modifiedText);
+        void addNewUserClick();
     }
 
 }

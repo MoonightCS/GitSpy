@@ -1,5 +1,6 @@
 package ru.popov.bodya.gitspy.presenter;
 
+import android.content.Intent;
 import android.os.Handler;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
@@ -44,6 +45,12 @@ public class UserActivity extends AppCompatActivity implements UsersViewDispatch
     @Override
     public void onFilterModified(UsersViewDispatcher sender, String modifiedText) {
         sender.filterAdapter(modifiedText);
+    }
+
+    @Override
+    public void addNewUserClick() {
+        Intent intent = SearchUsersActivity.newIntent(this);
+        startActivity(intent);
     }
 
 
